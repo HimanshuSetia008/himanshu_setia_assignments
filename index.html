@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        /* class for aligning the text to center */
+        .center {
+            text-align: center;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        td {
+            padding-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+
+        /* class for aligning the input(s) to left */
+        .cell {
+            text-align: left;
+            width: 50px;
+        }
+
+        /* class for highlighting the input(s) */
+        .inputFocus {
+            border: 2px solid black;
+            padding: 4px;
+        }
+
+        /* class for correcting position of address and hobbies label */
+        .uplift {
+            padding-bottom: 80px;
+        }
+
+        button {
+            border-style: solid;
+            border-width: 1px 3px 3px 1px;
+            padding: 5px 16px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        /* class for correcting submit and reset buttons */
+        .final {
+            padding-left: 60px;
+        }
+
+        .staticTable {
+            border: 1px solid black;
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Section-1 -->
+    <section>
+        <h2 class="center">Student Registration Form</h2>
+
+        <!-- Form will be link to the top of the current page -->
+        <form action="#" id="nameform">
+            <table>
+                <!-- Name -->
+                <tr>
+                    <td><label for="user_name">Name: </label></td>
+                    <td class="cell"><input type="text" id="user_name" name="user_name" class="inputFocus"></td>
+                </tr>
+                <!-- Phone Number -->
+                <tr>
+                    <td><label for="phone">Phone No: </label></td>
+                    <td class="cell"><input type="tel" id="phone" name="phone" placeholder="" class="inputFocus"
+                            pattern="[1-9]{1}[0-9]{9}"></td>
+                </tr>
+                <!-- DOB -->
+                <tr>
+                    <td><label for="birthday">Date of Birth: </label></td>
+                    <td class="cell"><input type="date" id="birthday" name="birthday" class="inputFocus"></td>
+                </tr>
+                <!-- Address -->
+                <tr>
+                    <td><label for="address" class="uplift">Address: </label></td>
+                    <td class="cell"><textarea id="address" name="address" rows="6" cols="25"
+                            class="inputFocus"></textarea></td>
+                </tr>
+                <!-- Gender selection -->
+                <tr>
+                    <td><label>Gender: </label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label class="cell" for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label class="cell" for="female">Female</label>
+                    </td>
+                </tr>
+                <!-- City selection -->
+                <tr>
+                    <td><label for="city">City: </label></td>
+                    <td><select id="city" name="city" class="inputFocus">
+                            <option value="">Select City</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Gurugram">Gurugram</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Noida">Noida</option>
+                            <option value="Panchkula">Panchkula</option>
+                            <option value="Pune">Pune</option>
+                            <option value="USA">USA</option>
+                        </select></td>
+                </tr>
+                <!-- Hobbies selection -->
+                <tr>
+                    <td><label class="uplift">Hobbies: </label></td>
+                    <td>
+                        <input type="checkbox" id="hobby1" name="hobby1" value="Music">
+                        <label for="hobby1" class="cell">Music</label><br>
+                        <input type="checkbox" id="hobby2" name="hobby2" value="Sports">
+                        <label for="hobby2" class="cell">Sports</label><br>
+                        <input type="checkbox" id="hobby3" name="hobby3" value="Reading">
+                        <label for="hobby3" class="cell">Reading</label><br>
+                        <input type="checkbox" id="hobby4" name="hobby4" value="Cooking">
+                        <label for="hobby4" class="cell">Cooking</label><br>
+                        <input type="checkbox" id="hobby5" name="hobby5" value="Dance">
+                        <label for="hobby5" class="cell">Dance</label>
+                    </td>
+                </tr>
+                <!-- Form submit/ reset buttons -->
+                <tr>
+                    <td class="final"><button type="submit" form="nameform" value="Submit">Submit</button></td>
+                    <td class="final"><button type="reset" form="nameform" value="submit">Reset</button></td>
+                </tr>
+            </table>
+        </form>
+    </section><br>
+
+    <!-- Section-2 -->
+    <section>
+        <h2 class="center">Student Records</h2><br>
+
+        <table class="staticTable center">
+            <!-- Static table headings -->
+            <tr>
+                <th>S.No.</th>
+                <th>Name</th>
+                <th>Phone No.</th>
+                <th>Gender</th>
+                <th>DOB</th>
+                <th>Hobbies</th>
+            </tr>
+            <!-- Entry1 -->
+            <tr>
+                <td rowspan="4">1</td>
+                <td rowspan="4">Akash</td>
+                <td rowspan="4">123-45-567</td>
+                <td rowspan="4">Male</td>
+                <td rowspan="4">12/12/1996</td>
+            <tr>
+                <td>Music</td>
+            </tr>
+            <tr>
+                <td>Dance</td>
+            </tr>
+            <tr>
+                <td>Reading</td>
+            </tr>
+            </tr>
+            <!-- Entry2 -->
+            <tr>
+                <td rowspan="3">2</td>
+                <td rowspan="3">Himanshu</td>
+                <td rowspan="3">234-45-654</td>
+                <td rowspan="3">Male</td>
+                <td rowspan="3">17/08/2001</td>
+            <tr>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <td>Cooking</td>
+            </tr>
+            </tr>
+            <!-- Entry3 -->
+            <tr>
+                <td rowspan="4">3</td>
+                <td rowspan="4">Nicky</td>
+                <td rowspan="4">534-23-644</td>
+                <td rowspan="4">Female</td>
+                <td rowspan="4">25/03/1994</td>
+            <tr>
+                <td>Reading</td>
+            </tr>
+            <tr>
+                <td>Dance</td>
+            </tr>
+            <tr>
+                <td>Cooking</td>
+            </tr>
+            </tr>
+        </table>
+    </section><br>
+</body>
+
+</html>
