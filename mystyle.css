@@ -1,0 +1,204 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+/* class for creating sticky header */
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background: #48b5e3;
+    color: black;
+    font-size: 20px;
+    z-index: 1;
+}
+
+/* class for aligning the text to center */
+.center {
+    text-align: center;
+}
+
+section {
+    margin: 4px;
+}
+
+/* class for table styling */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+/* class for aligning the input(s) to left */
+.cell {
+    text-align: left;
+    width: 50px;
+}
+
+/* class for highlighting the input(s) */
+.inputFocus {
+    border: 2px solid black;
+    padding: 4px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+/* class for correcting position of address and hobbies label */
+.uplift {
+    padding-bottom: 80px;
+}
+
+/* submit and reset buttons styling */
+button {
+    border-style: solid;
+    border-width: 1px 3px 3px 1px;
+    padding: 5px 16px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button[type=submit] {
+    background-color: #4dff4d;
+}
+
+button[type=reset] {
+    background-color: #ff751a;
+}
+
+/* class for correcting submit and reset buttons */
+.final {
+    padding-left: 60px;
+}
+
+/* class for static table styling */
+.staticTable {
+    border: 1px solid black;
+    width: 40%;
+    background-color: white;
+}
+
+/* classes for demonstrating display */
+.hiddenDisplay {
+    display: none;
+}
+
+.hiddenVisibile {
+    visibility: hidden;
+}
+
+/* classes for demonstrating position */
+.relative {
+    position: relative;
+    width: 600px;
+}
+
+.absolute {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 480px;
+}
+
+/* classes for demonstrating float */
+.floatValues {
+    width: 30%;
+    height: 40px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    clear: left;
+    float: right;
+}
+
+/* classes for demonstrating units */
+.remUnit {
+    font-size: 2rem;
+}
+
+.emUnit1 {
+    font-size: 30px;
+}
+
+.emUnit2 {
+    font-size: 0.5em;
+}
+
+.viewUnit1 {
+    font-size: 2vw;
+}
+
+.viewUnit2 {
+    font-size: 4vh;
+}
+
+/* classes for demonstrating selectors */
+div>p {
+    background-color: yellow;
+}
+
+div+p {
+    background-color: blue;
+}
+
+div~h4 {
+    background-color: green;
+}
+
+/* classes for demonstrating transitions and tranforms */
+.transMain {
+    width: 50px;
+    height: 50px;
+    background: #b61aff;
+}
+
+/* classes for demonstrating transitions */
+.transition {
+    border-radius: 25px;
+    transition: width 2s, height 2s;
+}
+
+.transition:hover {
+    width: 200px;
+    height: 200px;
+}
+
+/* classes for demonstrating tranforms */
+.transform {
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.transform_element {
+    transform: rotateX(150deg);
+}
+
+/* classes for demonstrating transitions and tranforms both*/
+.transition_transform {
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.transition_transform:hover {
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+}
